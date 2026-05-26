@@ -1,0 +1,204 @@
+.banner-pagina {
+      background: #c8a96e;
+      padding: 44px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      min-height: 160px;
+    }
+
+    .banner-breadcrumb {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .banner-breadcrumb a {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #5a4a30;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .banner-breadcrumb a:hover { color: #111; }
+
+    .banner-breadcrumb .separador {
+      font-size: 0.7rem;
+      color: #5a4a30;
+    }
+
+    .banner-breadcrumb .atual {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .banner-titulo {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #111;
+      line-height: 1.1;
+    }
+
+    .secao-contato {
+      background: #fff;
+      padding: 60px 60px 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .titulo-contato {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .cards-info {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    .card-info {
+      flex: 1;
+      background: #f7f7f7;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100px;
+    }
+
+    .card-info p {
+      font-size: 0.82rem;
+      color: #aaa;
+      font-weight: 300;
+      line-height: 1.65;
+    }
+
+    .card-info p strong {
+      color: #555;
+      font-weight: 400;
+    }
+
+    .card-info p a {
+      color: #444;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .card-info p a:hover { color: #c8a96e; }
+
+    .bloco-form-mapa {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .formulario {
+      flex: 1;
+      background: #f7f7f7;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      border: 1px solid #e0e0e0;
+      background: #fff;
+      padding: 14px 16px;
+      font-size: 0.8rem;
+      font-family: "Montserrat", Arial, sans-serif;
+      color: #555;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+    }
+
+    .formulario input::placeholder,
+    .formulario textarea::placeholder {
+      color: #bbb;
+    }
+
+    .formulario input:focus,
+    .formulario textarea:focus {
+      border-color: #c8a96e;
+    }
+
+    .formulario textarea {
+      height: 130px;
+    }
+
+    .btn-enviar {
+      align-self: flex-start;
+      background: #c8a96e;
+      color: #fff;
+      border: none;
+      padding: 14px 36px;
+      font-size: 0.82rem;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-weight: 500;
+      border-radius: 30px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+      margin-top: 4px;
+    }
+
+    .btn-enviar:hover { background: #b5924f; }
+
+    .bloco-mapa {
+      flex: 1;
+      background: #e8e8e8;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mapa-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .mapa-icone {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+
+    .mapa-titulo {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .mapa-sub {
+      font-size: 0.75rem;
+      color: #999;
+      font-weight: 300;
+      line-height: 1.6;
+      max-width: 260px;
+    }

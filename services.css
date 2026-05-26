@@ -1,0 +1,104 @@
+.banner-pagina {
+      background: #c8a96e;
+      padding: 44px 60px 44px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      min-height: 180px;
+    }
+
+    .banner-breadcrumb {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .banner-breadcrumb a {
+      font-size: 0.7rem;
+      font-weight: 400;
+      color: #5a4a30;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .banner-breadcrumb a:hover { color: #111; }
+
+    .banner-breadcrumb .separador {
+      font-size: 0.7rem;
+      color: #5a4a30;
+    }
+
+    .banner-breadcrumb .atual {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #111;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .banner-titulo {
+      font-size: 2.6rem;
+      font-weight: 800;
+      color: #111;
+      line-height: 1.1;
+    }
+
+  
+    .secao-servicos {
+      background: #fff;
+      padding: 80px 60px 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+    }
+
+    .linha-servicos {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    .card-servico {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 0 40px 0 0;
+    }
+
+    .icone-servico {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .icone-servico i {
+      font-size: 2.2rem;
+      color: #444;
+    }
+
+    .card-servico h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #111;
+      margin: 0;
+    }
+
+    .card-servico p {
+      font-size: 0.82rem;
+      color: #aaa;
+      line-height: 1.75;
+      font-weight: 300;
+      margin: 0;
+    }

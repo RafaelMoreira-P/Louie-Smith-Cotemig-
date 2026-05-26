@@ -1,0 +1,470 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+
+.barra-lateral {
+  width: 335px;
+  min-width: 335px;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 44px 24px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+}
+
+.foto-perfil {
+  width: 138px;
+  height: 138px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+  flex-shrink: 0;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.nome-perfil {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+.nav-menu {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 9px 0;
+  width: 100%;
+  text-align: center;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.nav-menu a:hover { color: #111; }
+
+.nav-menu a.ativo {
+  font-weight: 600;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.bloco-newsletter {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+
+.bloco-newsletter .label-news {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.04em;
+}
+
+.campo-email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.campo-email input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 14px;
+  font-size: 0.74rem;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #555;
+  background: transparent;
+}
+
+.campo-email input::placeholder { color: #bbb; }
+
+.campo-email button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.campo-email button:hover { color: #c8a96e; }
+
+
+.conteudo-principal {
+  margin-left: 335px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.secao-hero {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.hero-foto {
+  width: 700px;
+  min-width: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-foto img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.dots-slide {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  border: 2px solid rgba(255,255,255,0.7);
+  cursor: pointer;
+}
+
+.dot.ativo { background: #fff; }
+
+.hero-conteudo {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg-nome {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(0,0,0,0.04);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.hero-ola {
+  font-size: 0.88rem;
+  color: #999;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.hero-titulo {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.hero-titulo .destaque { color: #c8a96e; }
+
+.hero-subtitulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 26px;
+}
+
+.hero-desc {
+  font-size: 0.82rem;
+  color: #777;
+  line-height: 1.9;
+  max-width: 500px;
+  margin-bottom: 26px;
+  font-weight: 300;
+}
+
+.assinatura {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 2.8rem;
+  color: #111;
+  margin-bottom: 28px;
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.icone-social {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.icone-social:hover {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+}
+
+
+.secao-instagram {
+  background: #fff;
+  padding: 70px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  border-top: 1px solid #eee;
+}
+
+.titulo-secao {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.grade-instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  width: 100%;
+}
+
+.foto-insta {
+  flex: 1;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.foto-insta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.foto-insta:hover img { transform: scale(1.06); }
+
+
+.rodape {
+  background: #2b2b2b;
+  padding: 60px 60px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.rodape-colunas {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+
+.col-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  flex: 1;
+}
+
+.col-titulo {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.grade-recentes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grade-recentes-linha {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.foto-recente {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.foto-recente img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: filter 0.3s;
+}
+
+.foto-recente:hover img { filter: brightness(1); }
+
+.lista-arquivos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item-arquivo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+.item-arquivo span {
+  font-size: 0.82rem;
+  color: #aaa;
+  font-weight: 300;
+}
+
+.item-arquivo .qtd {
+  color: #666;
+  font-size: 0.78rem;
+}
+
+.lista-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.linha-contato {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.linha-contato i {
+  color: #c8a96e;
+  font-size: 0.9rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.linha-contato span {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.rodape-copy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #3a3a3a;
+  padding-top: 24px;
+}
+
+.rodape-copy p {
+  font-size: 0.74rem;
+  color: #555;
+  text-align: center;
+}
+
+.rodape-copy a {
+  color: #888;
+  text-decoration: none;
+}
